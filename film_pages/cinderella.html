@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cinderella - British Film Industry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Дополнительная стилизация -->
+  <style>
+    /* Анимация появления */
+    .animate-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      animation: fadeInLeft 1s forwards;
+    }
+
+    @keyframes fadeInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Фото по центру с эффектом */
+    .center-img {
+      display: block;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .center-img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Раздел мест съёмок */
+    .locations {
+      margin-top: 40px;
+    }
+
+    .location-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .location-gallery img {
+      width: calc(33% - 15px);
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .location-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Кастомизация карты */
+    .map {
+      margin: 20px 0;
+      height: 400px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../films.html">Films</a></li>
+  </ul>
+</nav>
+
+<main class="content">
+
+
+
+  <!-- Основная информация о фильме -->
+  <div class="film-detail animate-left">
+    <h1>CINDERELLA (2015)</h1>
+
+
+    <p class="description animate-left">
+      <strong>Cinderella</strong> is a 2015 live-action adaptation of the classic Disney animated film, directed by Kenneth Branagh. The movie retells the timeless fairy tale with stunning visuals, elegant costumes, and emotional performances. Starring Lily James in the title role and Cate Blanchett as the wicked stepmother, this version brings the magic of Cinderella to life with modern cinematic flair.
+    </p>
+
+    <!-- Карточка с тегами -->
+    <div class="film-card animate-left">
+      <p>A beautifully crafted fairy tale that blends fantasy, romance, and elegance. A must-watch for fans of magical storytelling and visual splendor.</p>
+      <div class="tags">
+        <span class="tag fantasy">#Fantasy</span>
+        <span class="tag romance">#Romance</span>
+        <span class="tag british">#BritishCinema</span>
+      </div>
+    </div>
+
+    <!-- Расширенное описание -->
+    <div class="extended-description">
+      <p class="animate-left">
+        This version of <em>Cinderella</em> captures the charm and grace of the original story while adding depth to its characters. From the majestic ballroom scene to the iconic glass slipper moment, every frame is filled with breathtaking detail and emotion. The chemistry between Lily James and Richard Madden adds warmth and sincerity to the fairytale romance.
+      </p>
+
+      <p class="animate-left">
+        The film was praised for its production design, costume work by Oscar-winning designer Sandy Powell, and the warm tone set by director Kenneth Branagh. It's a perfect example of how traditional stories can be reimagined for a new generation without losing their timeless appeal.
+      </p>
+
+      <p class="animate-left">
+        <img src="../images/cinderella-dress.jpg" alt="Cinderella Dress" class="additional-image left1">
+        One of the most memorable aspects of the film is its attention to detail — from the grand palace to the humble attic where Ella lives, every setting feels real and immersive. The film also includes subtle feminist themes, making it more relevant than ever.
+      </p>
+
+      <p class="animate-left">
+        Whether you're revisiting the story or discovering it anew, this version of Cinderella will enchant viewers of all ages with its beauty, kindness, and enduring message about staying true to yourself.
+      </p>
+      <img src="../images/cinderella-ball.jpg" alt="Cinderella at Ball" class="additional-image1">
+    </div>
+
+    <!-- Места съемок -->
+    <section class="locations animate-left">
+      <h2>Filming Locations</h2>
+      <p>The movie was filmed across several beautiful locations in the UK and Europe:</p>
+
+      <!-- Галерея мест съемок -->
+      <div class="location-gallery">
+        <img src="../images/cinderella-location-1.jpg" alt="Filming Location 1">
+        <img src="../images/cinderella-location-2.jpg" alt="Filming Location 2">
+        <img src="../images/cinderella-location-3.jpg" alt="Filming Location 3">
+      </div>
+    </section><br><br>
+
+ <h2 class="centered">Main Cast</h2>
+    <div class="cast-members">
+      <div class="cast-member">
+        <img src="../images/lily-james.jpg" alt="Lily James" class="cast-photo">
+        <p><strong>Lily James</strong><br>Ella / Cinderella</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/cate-blanchett.jpg" alt="Cate Blanchett" class="cast-photo">
+        <p><strong>Cate Blanchett</strong><br>Stepmother</p>
+      </div>
+      <div class="cast-member">
+         <img src="../images/richard-madden.jpg" alt="Richard Madden" class="cast-photo">
+        <p><strong>Richard Madden</strong><br>Kit</p>
+      </div>
+      <div class="cast-member">
+         <img src="../images/helena-bonham-carter.jpg" alt="Helena Bonham Carter" class="cast-photo">
+        <p><strong>Helena Bonham Carter</strong><br>Fairy Godmother</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/stellan-skarsgard.jpg" alt="Stellan Skarsgård" class="cast-photo">
+        <p><strong>Stellan Skarsgård</strong><br>Grand Duke</p>
+      </div>
+      <div class="cast-member">
+         <img src="../images/holliday-granger.jpg" alt="Holliday Grainger" class="cast-photo">
+        <p><strong>Holliday Grainger</strong><br>Anastasia</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script src="../scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paddington - British Film Industry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    /* Анимация появления */
+    .animate-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      animation: fadeInLeft 1s forwards;
+    }
+
+    @keyframes fadeInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Более красивый main-poster */
+    .main-poster {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .main-poster:hover {
+      transform: scale(1.02);
+    }
+
+    /* Интересные факты — улучшенный стиль */
+    .interesting-facts {
+      margin-top: 40px;
+      background-color: #f7d5f1; 
+      padding: 25px;
+      border-left: 6px solid #ce64f2;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(205, 197, 197, 0.236);
+    }
+
+    .interesting-facts h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .interesting-facts ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .interesting-facts li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+
+    .interesting-facts li::before {
+      content: "📌";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<!-- Минимальная навигация -->
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../films.html">Films</a></li>
+  </ul>
+</nav>
+
+<main class="content">
+
+
+  <!-- Карточка фильма -->
+  <div class="film-detail animate-left">
+    <h1>PADDINGTON</h1>
+
+   
+
+    <p class="description animate-left">
+      <strong>Paddington</strong> is a 2014 live-action fantasy family film based on the beloved children's book character created by Michael Bond. The movie tells the heartwarming story of a young Peruvian bear who travels to London in search of a new home and stumbles upon the kind-hearted Brown family, who take him in — despite some initial doubts.
+    </p>
+
+    <!-- Краткая карточка с тегами -->
+    <div class="film-card animate-left">
+      <p>Paddington is a charming tale about kindness, acceptance, and the power of good manners. A perfect family-friendly adventure full of humor, warmth, and unforgettable characters.</p>
+      <div class="tags">
+        <span class="tag family">#Family</span>
+        <span class="tag comedy">#Comedy</span>
+        <span class="tag british">#BritishCinema</span>
+      </div>
+    </div>
+
+    <!-- Расширенное описание + фото внутри текста -->
+    <div class="extended-description">
+      <p class="animate-left">
+        <img src="../images/paddington-in-london.jpg" alt="Paddington in London" class="additional-image right1">
+        Set against the backdrop of modern-day London (but with a distinctly classic feel), *Paddington* is filled with whimsical visual gags, vibrant set designs, and stunning special effects that bring the talking bear to life in a way that feels both magical and real. From getting stuck in drainpipes to accidentally flooding the bathroom, Paddington’s mishaps bring chaos — but also joy and unexpected friendship into the lives of everyone around him.
+      </p>
+
+      <p class="animate-left">
+        The film follows Paddington as he tries to adapt to life in a bustling London while staying true to his polite and optimistic nature. It introduces viewers to the warm-hearted Brown family — Henry, Mary, Judy, and Jonathan — who give Paddington a chance to find a place where he truly belongs. His journey teaches valuable lessons about kindness, tolerance, and the importance of doing what is right.
+      </p>
+
+      <p class="animate-left">
+        <img src="../images/paddington-family.jpg" alt="Paddington with the Browns" class="additional-image right1 ">
+        One of the most touching aspects of the film is how it balances humor with emotional depth. Whether he's sipping tea or exploring the city, Paddington always manages to charm those around him — even the grumpiest ones.
+      </p>
+
+      <p class="animate-left">
+        The sequel, *Paddington 2*, continued the success with even more colorful adventures and received widespread critical acclaim, often being called one of the best family films of recent years. Both films were praised for their gentle tone, visual style, and Ben Whishaw’s warm voice performance as Paddington.
+      </p>
+
+      <p class="animate-left">
+        <img src="../images/paddington-marmalade.jpg" alt="Paddington loves marmalade" class="additional-image center animate-left">
+        Paddington’s love for marmalade sandwiches has become iconic, appearing in almost every scene and symbolizing his innocent joy and simple pleasures.
+      </p>
+    </div>
+
+    <!-- Интересные факты -->
+    <section class="interesting-facts animate-left">
+      <h2>Interesting Facts</h2>
+      <ul>
+        <li>Paddington Bear was originally created in 1958 by Michael Bond and has become one of Britain’s most iconic literary characters.</li>
+        <li>The film uses cutting-edge CGI technology to make Paddington look realistic and expressive while maintaining his charm.</li>
+        <li>Ben Whishaw replaced Colin Firth as Paddington’s voice after Firth left due to creative differences over the portrayal of the character.</li>
+        <li>Many scenes were shot on location in London, including Windsor Gardens and Paddington Station — which even got its own blue plaque for the film.</li>
+        <li>The film received critical acclaim and won multiple awards, including Best Family Film at the National Movie Awards.</li>
+      </ul>
+    </section>
+
+  <h2 class="centered">Main Cast</h2>
+    <div class="cast-members">
+      <div class="cast-member">
+        <img src="../images/ben-whishaw.jpg" alt="Ben Whishaw" class="cast-photo">
+        <p><strong>Ben Whishaw</strong><br>Voice of Paddington</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/sandra-bullock.jpg" alt="Sandra Bullock" class="cast-photo">
+        <p><strong>Sandra Bullock</strong><br>Mrs. Bird (voice)</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/hugh-bonnie.png" alt="Hugh Bonneville" class="cast-photo">
+        <p><strong>Hugh Bonneville</strong><br>Henry Brown</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/sally-hawkins.jpg" alt="Sally Hawkins" class="cast-photo">
+        <p><strong>Sally Hawkins</strong><br>Mary Brown</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/julie-walters.jpg" alt="Julie Walters" class="cast-photo">
+        <p><strong>Julie Walters</strong><br>Old Mrs. Bird</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/nick-frost.jpg" alt="Nick Frost" class="cast-photo">
+        <p><strong>Nick Frost</strong><br>Mr. Gruber</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script src="../scripts.js"></script>
+
+</body>
+</html>

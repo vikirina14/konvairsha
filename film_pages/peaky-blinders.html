@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peaky Blinders - British Film Industry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Анимация для цитат */
+    .quote {
+      font-style: italic;
+      background-color: #ccc6c678; 
+      border-left: 5px solid #ac9ec1;
+      padding: 15px 20px;
+      margin: 40px 0;
+      font-size: 1.1em;
+      color: #444;
+      opacity: 0;
+      transform: translateX(20px);
+      animation: slideIn 1s forwards;
+    }
+
+    .quote.left-quote {
+      animation-delay: 0.3s;
+      transform: translateX(20px);
+    }
+
+    .quote.right-quote {
+      animation-delay: 0.5s;
+      transform: translateX(-20px);
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Отступ после описания */
+    .after-description-gap {
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Минимальная навигация -->
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../films.html">Films</a></li>
+  </ul>
+</nav>
+
+<main class="content">
+
+  <!-- Карточка фильма -->
+  <div class="film-detail">
+    <h1>PEAKY BLINDERS</h1>
+
+    <p class="description">
+      <strong>Peaky Blinders</strong> is a British period crime drama television series created by Steven Knight. Set in post-World War I Birmingham, England, the show follows the exploits of the Shelby crime family, led by the charismatic and cunning Tommy Shelby. Known for its stylish visuals, intense storytelling, and powerful performances, Peaky Blinders has become one of the most acclaimed British TV series of the 21st century.
+    </p>
+
+<div class="film-card">
+  <p>Peaky Blinders is a British period crime drama television series created by Steven Knight...</p>
+  <div class="tags">
+    <span class="tag crime">#Crime</span>
+    <span class="tag british">#BritishCinema</span>
+  </div>
+</div> 
+    <!-- Большой отступ после основного описания -->
+    <div class="after-description-gap"></div>
+
+    <!-- Расширенное описание -->
+    <div class="extended-description">
+      <p>
+        <img src="../images/peaky-blinders-additional-1.jpg" alt="Tommy Shelby" class="additional-image right">
+        The series begins in 1919, focusing on the rise of the fictional Peaky Blinders gang — based loosely on a real street gang from the late 19th century. The Shelbys, led by Tommy Shelby, navigate power struggles, political corruption, and rival gangs while trying to move up in society. The show blends historical realism with dramatic tension and unforgettable characters.
+      </p><br><br><br>
+
+      <blockquote class="quote left-quote">
+        “I'm not violent. I'm not. I'm not a violent man. But we are at war, and you cannot insult me.”<br>
+        — Tommy Shelby
+      </blockquote>
+
+      <p>
+        Each season builds on the growing ambitions of Tommy Shelby, portrayed brilliantly by Cillian Murphy, whose transformation from war veteran to ruthless kingpin is at the heart of the series. The supporting cast includes Helen McCrory as Polly Gray, Paul Anderson as Arthur Shelby, and Tom Hardy as Alfie Solomons — each bringing depth and intensity to the story.
+      </p>
+
+      <p>
+        <img src="../images/peaky-blinders-additional-2.jpg" alt="Shelby Family" class="additional-image left">
+        The show’s aesthetic — sharp suits, razor blade caps, and moody cinematography — sets it apart visually. Combined with a modern soundtrack featuring artists like Nick Cave and the Bad Seeds, Arctic Monkeys, and Radiohead, Peaky Blinders feels both nostalgic and contemporary.
+      </p><br><br><br>
+
+      <blockquote class="quote right-quote">
+        “You're looking at a man who's been shot twice, stabbed six times, poisoned once, and survived a bloody war. So whatever trouble you think is coming... it won't be the worst thing I've seen.”<br>
+        — Tommy Shelby
+      </blockquote>
+
+      <p>
+        Peaky Blinders received widespread critical acclaim and has a loyal global fanbase. It was praised for its writing, direction, and especially the performances of its lead actors. The final season concluded the Shelby saga in dramatic fashion, leaving fans eager for the upcoming feature film that will wrap up the story definitively.
+      </p>
+    </div>
+  </div>
+
+  <h2 class="centered">Main Cast</h2>
+<div class="cast-members">
+  <div class="cast-member">
+    <img src="../images/cillian-murphy.jpg" alt="Cillian Murphy" class="cast-photo">
+    <p><strong>Cillian Murphy</strong><br>Томас Шелби</p>
+  </div>
+  <div class="cast-member">
+    <img src="../images/paul-anderson.jpg" alt="Paul Anderson" class="cast-photo">
+    <p><strong>Paul Anderson</strong><br>Артур Шелби</p>
+  </div>
+  <div class="cast-member">
+    <img src="../images/helen-mirren.jpg" alt="Helen Mirren" class="cast-photo">
+    <p><strong>Helen Mirren</strong><br>Эсме Шелби</p>
+  </div>
+  <div class="cast-member">
+    <img src="../images/tom-hardy.jpg" alt="Tom Hardy" class="cast-photo">
+    <p><strong>Tom Hardy</strong><br>Альффи Шелби</p>
+  </div>
+  <div class="cast-member">
+    <img src="../images/annabelle-wallis.jpg" alt="Annabelle Wallis" class="cast-photo">
+    <p><strong>Annabelle Wallis</strong><br>Грейс Шелби</p>
+  </div>
+
+
+</main>
+
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script src="../scripts.js"></script>
+
+</body>
+</html>
