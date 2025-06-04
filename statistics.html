@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>British Film Industry Statistics</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .stats-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .stat-section {
+      margin-bottom: 60px;
+    }
+
+    .chart-container {
+      position: relative;
+      margin: auto;
+      height: 300px;
+    }
+
+    .fact-box {
+      background-color: #f1e2ea; 
+      padding: 20px;
+      border-left: 4px solid #e89eda;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="studios.html">Studios</a>
+  <a href="films.html">Films</a>
+  <a href="statistics.html">Statistics</a>
+  <a href="technology.html">Technology</a>
+</nav>
+
+<!-- Main Content -->
+<div class="container stats-container">
+  <h2>British Film Industry: Key Statistics</h2>
+  <p class="intro-text">The British film industry plays a vital role in the global entertainment landscape. Here are some key figures and trends that highlight its growth, impact, and economic importance.</p>
+
+  <!-- Top Grossing Films -->
+  <section class="stat-section">
+    <h3>Top-Grossing British Films</h3>
+    <div class="chart-container">
+      <canvas id="topGrossingChart"></canvas>
+    </div>
+    <div class="fact-box">
+      Harry Potter and James Bond remain two of the most successful franchises ever made.
+    </div>
+  </section>
+
+  <!-- Budget vs Revenue -->
+  <section class="stat-section">
+    <h3>Budget vs Revenue Comparison</h3>
+    <div class="chart-container">
+      <canvas id="budgetRevenueChart"></canvas>
+    </div>
+    <div class="fact-box">
+      Some films achieve massive returns despite relatively small budgets — a testament to creative storytelling.
+    </div>
+  </section>
+
+  <!-- Industry Growth -->
+  <section class="stat-section">
+    <h3>Industry Growth Over Time</h3>
+    <div class="chart-container">
+      <canvas id="growthChart"></canvas>
+    </div>
+    <div class="fact-box">
+      The UK film sector has seen steady growth, especially since the early 2010s.
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+<script>
+  // Top Grossing Films — Bar Chart
+  const topGrossingChart = new Chart(document.getElementById('topGrossingChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Harry Potter', 'Skyfall', 'Paddington 2', 'Slumdog', 'The King\'s Speech'],
+      datasets: [{
+        label: 'Worldwide Box Office ($)',
+        data: [1340, 1108, 268, 378, 414],
+        backgroundColor: '#d73335'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          ticks: {
+            callback: value => '$' + value + 'M'
+          }
+        }
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: context => '$' + context.raw + ' million'
+          }
+        }
+      }
+    }
+  });
+
+  // Budget vs Revenue — Pie Chart
+  const budgetRevenueChart = new Chart(document.getElementById('budgetRevenueChart'), {
+    type: 'pie',
+    data: {
+      labels: ['Budget', 'Revenue'],
+      datasets: [{
+        data: [125, 1108],
+        backgroundColor: ['#ff6b6b', '#4ecdc4']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: context => '$' + context.raw + ' million'
+          }
+        }
+      }
+    }
+  });
+
+  // Industry Growth — Line Chart
+  const growthChart = new Chart(document.getElementById('growthChart'), {
+    type: 'line',
+    data: {
+      labels: ['2010', '2013', '2016', '2019', '2022'],
+      datasets: [{
+        label: 'Film Production Spend (£B)',
+        data: [0.9, 1.2, 1.5, 2.0, 2.1],
+        borderColor: '#d73335',
+        fill: false,
+        tension: 0.3
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: {
+          ticks: {
+            callback: value => '£' + value + 'B'
+          }
+        }
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: context => '£' + context.raw + ' billion'
+          }
+        }
+      }
+    }
+  });
+
+  // Scroll to Top Function
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Show or hide back to top button
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTopBtn');
+    btn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
+  });
+</script>
+
+</body>
+</html>

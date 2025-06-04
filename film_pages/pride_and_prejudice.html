@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pride and Prejudice - British Film Industry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Анимация для цитат */
+    .quote {
+      font-style: italic;
+      background-color: #ccc6c678; 
+      border-left: 5px solid #ac9ec1;
+      padding: 15px 20px;
+      margin: 40px 0;
+      font-size: 1.1em;
+      color: #444;
+      opacity: 0;
+      transform: translateX(20px);
+      animation: slideIn 1s forwards;
+    }
+
+    .quote.left-quote {
+      animation-delay: 0.3s;
+      transform: translateX(20px);
+    }
+
+    .quote.right-quote {
+      animation-delay: 0.5s;
+      transform: translateX(-20px);
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Отступ после описания */
+    .after-description-gap {
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Минимальная навигация -->
+<nav>
+  
+    <a href="../index.html">Home</a>
+    <a href="../films.html">Films</a>
+  
+</nav>
+<main class="content">
+
+  <!-- Карточка фильма -->
+  <div class="film-detail">
+    <h1>PRIDE AND PREJUDICE</h1>
+
+    <p class="description">
+      <strong>Pride & Prejudice</strong> is a 2005 romantic drama film directed by Joe Wright and based on the classic novel by Jane Austen. The movie follows the story of Elizabeth Bennet, a spirited young woman in early 19th-century England, as she navigates issues of marriage, morality, and social expectations while clashing with the proud and enigmatic Mr. Darcy.
+    </p>
+
+    <div class="film-card">
+      <p>Pride & Prejudice is a timeless romance set in the English countryside, known for its breathtaking visuals and emotional depth...</p>
+      <div class="tags">
+        <span class="tag romance">#Romance</span>
+        <span class="tag british">#BritishCinema</span>
+      </div>
+    </div>
+
+    <!-- Большой отступ после основного описания -->
+    <div class="after-description-gap"></div>
+
+    <!-- Расширенное описание -->
+    <div class="extended-description">
+      <p>
+        <img src="../images/pride-and-prejudice-additional-1.jpg" alt="Elizabeth and Mr. Darcy" class="additional-image right">
+        Set in the English countryside, the film beautifully captures the elegance and restraint of Regency-era society. With sweeping cinematography, period costumes, and a moving score by Dario Marianelli, *Pride & Prejudice* brings Austen’s beloved characters to life with emotional depth and visual splendor.
+      </p><br><br><br>
+
+      <blockquote class="quote left-quote">
+        “You have bewitched me, body and soul.”<br>
+        — Mr. Darcy
+      </blockquote>
+
+      <p>
+        Keira Knightley delivers a vibrant and nuanced performance as Elizabeth Bennet, capturing both her wit and vulnerability. Matthew Macfadyen portrays Mr. Darcy with quiet intensity, embodying his transformation from aloof aristocrat to devoted lover. Their chemistry is one of the film’s most memorable elements.
+      </p>
+
+      <p>
+        <img src="../images/pride-and-prejudice-additional-2.jpg" alt="Scenic landscape" class="additional-image left1">
+        The supporting cast includes Brenda Blethyn as the overbearing Mrs. Bennet, Donald Sutherland as Mr. Bennet, and Tom Hollander as the obsequious Mr. Collins. The film received critical acclaim for its direction, performances, and cinematography, and was nominated for four Academy Awards.
+      </p><br><br><br>
+
+      <blockquote class="quote right-quote">
+        “My good opinion, once lost, is lost forever.”<br>
+        — Mr. Darcy
+      </blockquote>
+
+      <p>
+        As a modern adaptation of a literary classic, *Pride & Prejudice* successfully blends historical authenticity with emotional storytelling. It remains one of the most popular and enduring interpretations of Austen’s work and is often praised for its visual beauty and timeless romance.
+      </p>
+    </div>
+
+    <h2 class="centered">Main Cast</h2>
+    <div class="cast-members">
+      <div class="cast-member">
+        <img src="../images/keira-knightley.jpg" alt="Keira Knightley" class="cast-photo">
+        <p><strong>Keira Knightley</strong><br>Elizabeth Bennet</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/matthew-macfadyen.jpg" alt="Matthew Macfadyen" class="cast-photo">
+        <p><strong>Matthew Macfadyen</strong><br>Mr. Darcy</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/brenda-blethyn.jpg" alt="Brenda Blethyn" class="cast-photo">
+        <p><strong>Brenda Blethyn</strong><br>Mrs. Bennet</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/donald-sutherland.jpg" alt="Donald Sutherland" class="cast-photo">
+        <p><strong>Donald Sutherland</strong><br>Mr. Bennet</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/tom-hollander.jpg" alt="Tom Hollander" class="cast-photo">
+        <p><strong>Tom Hollander</strong><br>Mr. Collins</p>
+      </div>
+      <div class="cast-member">
+        <img src="../images/rosamund-pike.jpg" alt="Rosamund Pike" class="cast-photo">
+        <p><strong>Rosamund Pike</strong><br>Jane Bennet</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script src="../scripts.js"></script>
+
+</body>
+</html>

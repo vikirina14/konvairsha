@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>British Film Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* === Обёртка для студий === */
+    .studio-section {
+      margin: 60px 0;
+    }
+
+    .studio-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .studio-image {
+      flex: 1 1 40%;
+      max-width: 40%;
+    }
+
+    .studio-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .studio-info {
+      flex: 1 1 50%;
+      background-color: #f1e2ea; 
+      padding: 25px;
+      border-left: 9px solid #e89eda;
+      border-radius: 8px;
+    }
+
+    .studio-info h3 {
+      color: #222;
+      margin-top: 0;
+    }
+
+    /* Для мобильных устройств */
+    @media (max-width: 768px) {
+      .studio-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .studio-image,
+      .studio-info {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="studios.html">Studios</a>
+  <a href="films.html">Films</a>
+  <a href="statistics.html">Statistics</a>
+  <a href="technology.html">Technology</a>
+</nav>
+
+
+<!-- Main Content -->
+<div class="container">
+  <h2>Famous British Film Studios</h2>
+  <p class="intro-text">The UK is home to some of the most iconic film studios in the world. These legendary locations have brought to life countless cinematic masterpieces and continue to shape global filmmaking today.</p>
+
+  <!-- Pinewood Studios -->
+  <section class="studio-section">
+    <div class="studio-box">
+      <div class="studio-image">
+        <img src="images/pinewood_studios.jpg" alt="Pinewood Studios">
+      </div>
+      <div class="studio-info">
+        <h3>Pinewood Studios</h3>
+        <p>One of the most famous studios in the world, Pinewood has hosted productions like James Bond, Star Wars, and Marvel films. It opened in 1936 and remains a hub for international film production.</p>
+        <p><strong>Fun Fact:</strong> The studio’s 007 Stage was built specifically for the James Bond franchise and has been used in almost every Bond film since 1963.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elstree Studios -->
+  <section class="studio-section">
+    <div class="studio-box reverse">
+      <div class="studio-image">
+        <img src="images/elstree_studios.jpg" alt="Elstree Studios">
+      </div>
+      <div class="studio-info">
+        <h3>Elstree Studios</h3>
+        <p>Known as the birthplace of British television, Elstree Studios also played a crucial role in film history. Iconic movies like "Star Wars: Episode IV" were filmed here.</p>
+        <p><strong>Interesting:</strong> Elstree was where Alfred Hitchcock started his career and made some of his early silent films.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leavesden Studios -->
+  <section class="studio-section">
+    <div class="studio-box">
+      <div class="studio-image">
+        <img src="images/leavesden_studios.jpg" alt="Leavesden Studios">
+      </div>
+      <div class="studio-info">
+        <h3>Leavesden Studios</h3>
+        <p>This former aircraft factory became one of the UK’s most advanced film studios. It was the primary location for all ten Harry Potter films and many DC superhero movies.</p>
+        <p><strong>Behind the scenes:</strong> After the success of Harry Potter, Leavesden was officially renamed Warner Bros. Studios, Leavesden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shepperton Studios -->
+  <section class="studio-section">
+    <div class="studio-box reverse">
+      <div class="studio-image">
+        <img src="images/shepperton_studios.jpg" alt="Shepperton Studios">
+      </div>
+      <div class="studio-info">
+        <h3>Shepperton Studios</h3>
+        <p>Located near London, Shepperton is one of the oldest film studios in the UK. It has been used for major blockbusters including "Blade Runner 2049", "Tenet", and "The Batman".</p>
+        <p><strong>Did you know?</strong> Shepperton was founded in 1931 and has over 20 sound stages and massive outdoor sets available for filmmakers.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Show or hide back to top button
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTopBtn');
+    btn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
+  });
+</script>
+
+</body>
+</html>

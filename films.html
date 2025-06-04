@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>British Films</title>
+
+  <!-- Подключение шрифтов -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto :wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Фильтр по жанрам -->
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="studios.html">Studios</a>
+  <a href="films.html">Films</a>
+  <a href="statistics.html">Statistics</a>
+  <a href="technology.html">Technology</a>
+</nav>
+
+
+<main class="content">
+  <!-- Фильтр по жанрам -->
+<div class="genre-filter">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+  <button class="filter-btn" data-filter="crime">Crime</button>
+  <button class="filter-btn" data-filter="british">British</button>
+  <button class="filter-btn" data-filter="romance">Romance</button>
+  <button class="filter-btn" data-filter="drama">Drama</button>
+  <button class="filter-btn" data-filter="historical">Historical</button>
+  <button class="filter-btn" data-filter="mystery">Mystery</button>
+  <button class="filter-btn" data-filter="family">Family</button>
+  <button class="filter-btn" data-filter="comedy">Comedy</button>
+</div>
+  <h2>Famous British Films</h2>
+
+  <!-- Сетка фильмов -->
+  <div class="film-grid">
+
+    <div class="film-card" data-genre="fantasy british drama">
+      <a href="film_pages/harry_potter.html">
+        <img src="images/harry-potter.jpg" alt="Harry Potter">
+        <h3>Harry Potter Series</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="mystery crime british">
+      <a href="film_pages/sherlock_holmes.html">
+        <img src="images/sherlock-holmes.jpg" alt="Sherlock Holmes">
+        <h3>Sherlock Holmes</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="crime historical british">
+      <a href="film_pages/peaky-blinders.html">
+        <img src="images/peaky-blinders.jpg" alt="Peaky Blinders">
+        <h3>Peaky Blinders</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="crime comedy">
+      <a href="film_pages/lock-stock.html">
+        <img src="images/lock-stock.jpg" alt="Lock, Stock and Two Smoking Barrels">
+        <h3>Lock, Stock and Two Smoking Barrels</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="romance drama historical">
+      <a href="film_pages/pride_and_prejudice.html">
+        <img src="images/pride-and-prejudice.jpg" alt="Pride and Prejudice">
+        <h3>Pride & Prejudice</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="drama historical">
+      <a href="film_pages/boy_in_pajamas.html">
+        <img src="images/the-boy-in-the-striped-pajamas.jpg" alt="The Boy in the Striped Pajamas">
+        <h3>The Boy in the Striped Pajamas</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="family comedy">
+      <a href="film_pages/paddington.html">
+        <img src="images/paddington.jpg" alt="Paddington">
+        <h3>Paddington</h3>
+      </a>
+    </div>
+
+   <div class="film-card" data-genre="fantasy family romance">
+      <a href="film_pages/cinderella.html">
+        <img src="images/cinderella.jpg" alt="Cinderella">
+        <h3>Cinderella</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="fantasy family">
+      <a href="film_pages/narnia.html">
+        <img src="images/the-chronicles-of-narnia.jpg" alt="The Chronicles of Narnia">
+        <h3>The Chronicles of Narnia</h3>
+      </a>
+    </div>
+
+    <div class="film-card" data-genre="fantasy romance comedy">
+      <a href="film_pages/penelope.html">
+        <img src="images/penelope.jpg" alt="Penelope">
+        <h3>Penelope</h3>
+      </a>
+    </div>
+
+  </div>
+</main><br><br><br><br>
+
+<footer>
+  <p>&copy; 2025 British Film Industry | Created for educational purposes</p>
+</footer>
+
+<button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">↑</button>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
